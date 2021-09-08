@@ -1,0 +1,10 @@
+const router = require('express').Router();
+
+const verify = require('./verify');
+router.get('',verify,(req,res)=>{
+    res.send('special area is called');
+
+});
+
+
+module.exports = router;
